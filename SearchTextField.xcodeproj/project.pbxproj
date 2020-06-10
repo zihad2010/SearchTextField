@@ -15,6 +15,9 @@
 		965BC1692490A48300AF17EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965BC1672490A48300AF17EF /* LaunchScreen.storyboard */; };
 		965BC1742490A48300AF17EF /* SearchTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BC1732490A48300AF17EF /* SearchTextFieldTests.swift */; };
 		965BC17F2490A48300AF17EF /* SearchTextFieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BC17E2490A48300AF17EF /* SearchTextFieldUITests.swift */; };
+		965BC1922490A64400AF17EF /* CitiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BC1912490A64400AF17EF /* CitiesModel.swift */; };
+		965BC1942490B28E00AF17EF /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BC1932490B28E00AF17EF /* SearchItem.swift */; };
+		965BC1962490B37700AF17EF /* CustomSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BC1952490B37700AF17EF /* CustomSearchTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		965BC17A2490A48300AF17EF /* SearchTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		965BC17E2490A48300AF17EF /* SearchTextFieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldUITests.swift; sourceTree = "<group>"; };
 		965BC1802490A48300AF17EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965BC1912490A64400AF17EF /* CitiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesModel.swift; sourceTree = "<group>"; };
+		965BC1932490B28E00AF17EF /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
+		965BC1952490B37700AF17EF /* CustomSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,10 @@
 		965BC15B2490A48200AF17EF /* SearchTextField */ = {
 			isa = PBXGroup;
 			children = (
-				965BC15C2490A48200AF17EF /* AppDelegate.swift */,
-				965BC15E2490A48200AF17EF /* SceneDelegate.swift */,
-				965BC1602490A48200AF17EF /* ViewController.swift */,
-				965BC1622490A48200AF17EF /* Main.storyboard */,
+				965BC1902490A4E100AF17EF /* App */,
+				965BC18E2490A4B300AF17EF /* Controller */,
+				965BC18D2490A4A900AF17EF /* View */,
+				965BC18C2490A49E00AF17EF /* Model */,
 				965BC1652490A48300AF17EF /* Assets.xcassets */,
 				965BC1672490A48300AF17EF /* LaunchScreen.storyboard */,
 				965BC16A2490A48300AF17EF /* Info.plist */,
@@ -126,6 +132,41 @@
 				965BC1802490A48300AF17EF /* Info.plist */,
 			);
 			path = SearchTextFieldUITests;
+			sourceTree = "<group>";
+		};
+		965BC18C2490A49E00AF17EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				965BC1912490A64400AF17EF /* CitiesModel.swift */,
+				965BC1932490B28E00AF17EF /* SearchItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		965BC18D2490A4A900AF17EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				965BC1622490A48200AF17EF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		965BC18E2490A4B300AF17EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				965BC1602490A48200AF17EF /* ViewController.swift */,
+				965BC1952490B37700AF17EF /* CustomSearchTextField.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		965BC1902490A4E100AF17EF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				965BC15C2490A48200AF17EF /* AppDelegate.swift */,
+				965BC15E2490A48200AF17EF /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965BC1962490B37700AF17EF /* CustomSearchTextField.swift in Sources */,
 				965BC1612490A48200AF17EF /* ViewController.swift in Sources */,
 				965BC15D2490A48200AF17EF /* AppDelegate.swift in Sources */,
+				965BC1922490A64400AF17EF /* CitiesModel.swift in Sources */,
 				965BC15F2490A48200AF17EF /* SceneDelegate.swift in Sources */,
+				965BC1942490B28E00AF17EF /* SearchItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
